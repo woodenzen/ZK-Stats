@@ -8,5 +8,5 @@ let body = "Hello World\n";
 
 // Add your code magic here
 
-// Tell TheArchive to save the content
+// Tell The Archive to save the content
 output.changeFile.content = body;
