@@ -29,5 +29,5 @@ The Archive plug-ins are distributed as folders with the extension `.thearchivep
 ### Release Steps
 
 1. **Update the Version**: Increment the plug-in version in the manifest file and commit your changes.
-2. **Zip the Plug-In Folder**: Compress the folder with the `.The Archiveplugin` extension.
+2. **Zip the Plug-In Folder**: Compress the folder with the `.thearchiveplugin` extension.
 3. **Publish Your Release**: Add the zip file to your repository or create a release on GitHub with the zip file attached.
