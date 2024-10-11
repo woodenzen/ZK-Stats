@@ -14,7 +14,7 @@ To create your own plug-in:
 ### Customization
 
 - **Rename Your Plug-In**: Choose a name for your plug-in and update it in the manifest file.
-- **Set a Unique Identifier**: Define a unique identifier in the format `com.example.plugin-name` and specify it in the manifest file. Ensure the folder name matches this identifier, e.g., `com.example.plugin-name.The Archiveplugin`. Note: The Archive requires plug-ins to follow this naming convention.
+- **Set a Unique Identifier**: Define a unique identifier in the format `com.example.plugin-name` and specify it in the manifest file. Ensure the folder name matches this identifier, e.g., `com.example.plugin-name.thearchiveplugin`. Note: The Archive requires plug-ins to follow this naming convention.
 
 ## Development
 
@@ -24,7 +24,7 @@ For more details, check out the official [developer documentation](https://zette
 
 ## Releasing Your Plug-In
 
-The Archive plug-ins are distributed as folders with the extension `.The Archiveplugin`. To share your plug-in, package it in a zip file containing the plug-in folder and all associated files.
+The Archive plug-ins are distributed as folders with the extension `.thearchiveplugin`. To share your plug-in, package it in a zip file containing the plug-in folder and all associated files.
 
 ### Release Steps
 
