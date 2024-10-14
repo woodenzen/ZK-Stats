@@ -7,7 +7,7 @@
   "releaseDate": "2024-10-12",
   "identifier": "com.will.stats",
   "title": "ZK Statistics",
-  "description": "Creates a statistical summary of the zettelkasten and a table of monthly note counts",
+  "description": "Creates a statistical summary of the zettelkasten\nwith a table of monthly note counts\nIt puts a copy in the Clipboard\nfor pasting elsewhere.",
   "input": {
     "notes": ["all"],
     "text": []
