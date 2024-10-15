@@ -1,0 +1,24 @@
+{
+  "appVersion": "1.8.0",
+  "authors": [
+    {"name": "Will Simpson"}
+  ],
+  "version": "1.3",
+  "releaseDate": "2024-10-12",
+  "identifier": "com.will.stats",
+  "title": "ZK Statistics",
+  "description": "Creates a statistical summary of the zettelkasten\nwith a table of monthly note counts\nIt puts a copy in the Clipboard\nfor pasting elsewhere.",
+  "input": {
+    "notes": ["all"],
+    "text": []
+  },
+  "output" : {
+    "insertText" : true,
+    "changeFile" : { "programmaticFilename" : true },
+    "onCompletion": "showFile"
+  },
+  "dependencies": []
+
+  
+}
+
