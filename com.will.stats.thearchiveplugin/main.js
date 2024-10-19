@@ -1,10 +1,12 @@
 
 /**
  * Plugin for "The Archive"
- * Creates a statistics summaryof the zettelkasten and a table of monthly note counts
+ * Creates a statistics summary of the zettelkasten and a table of monthly note counts
  *   - The user is prompted for a title
  *   - The filename is made from the current timestamp
  *   - A front matter is inserted at the top of the created note
+ * 
+ * Also Puts a copy of the note in the clipboard for pasting elsewhere.
  * 
  * NB:
  *   - The timestamp is precise to the minute
