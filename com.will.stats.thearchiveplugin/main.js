@@ -108,8 +108,8 @@ function countFilesByMonth(notes) {
 function createMonthlyTable(counts) {
   let years = new Set();
   let months = [
-    'January', 'February', 'March', 'April', 'May', 'June',
-    'July', 'August', 'September', 'October', 'November', 'December'
+    'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+    'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
   ];
   
   // Collect all years from the counts
@@ -117,26 +117,26 @@ function createMonthlyTable(counts) {
     years.add(key.slice(0, 4));
   });
   years = Array.from(years).sort();
-
+  
   // Calculate the maximum width for each column
-  const maxYearWidth = Math.max(...years.map(year => year.length));
+  const maxYearWidth = Math.max(...years.map(year => year.length), 'Year'.length);
   const maxMonthWidth = Math.max(...months.map(month => month.length));
   const maxCountWidth = Math.max(...Object.values(counts).map(count => String(count).length), 1);
-
+  
   // Create the header row
-  let table = `| ${'Month'.padEnd(maxMonthWidth)} | ` + years.map(year => year.padEnd(maxYearWidth)).join(' | ') + ' |\n';
-  table += `|${'-'.repeat(maxMonthWidth + 2)}|` + years.map(() => '-'.repeat(maxYearWidth + 2)).join('|') + '|\n';
-
-  // Create the rows for each month
-  months.forEach((month, index) => {
-    let row = `| ${month.padEnd(maxMonthWidth)} |`;
-    years.forEach(year => {
+  let table = `| ${'Year'.padEnd(maxYearWidth)} | ` + months.map(month => month.padEnd(maxMonthWidth)).join(' | ') + ' |\n';
+  table += `|${'-'.repeat(maxYearWidth + 2)}|` + months.map(() => '-'.repeat(maxMonthWidth + 2)).join('|') + '|\n';
+  
+  // Create the rows for each year
+  years.forEach(year => {
+    let row = `| ${year.padEnd(maxYearWidth)} |`;
+    months.forEach((month, index) => {
       const key = `${year}-${String(index + 1).padStart(2, '0')}`;
-      row += ` ${String(counts[key] || 0).padEnd(maxYearWidth)} |`;
+      row += ` ${String(counts[key] || 0).padEnd(maxMonthWidth)} |`;
     });
     table += row + '\n';
   });
-
+  
   return table;
 }
 
